@@ -1,0 +1,28 @@
+.basic-form__div {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 5rem auto;
+    border: 2px black solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 15rem;
+}
+
+.basic-form__div button {
+    border-radius: 4px;
+    border: 1px black solid;
+    background-color: rgb(71, 4, 133);
+    color: white;
+    align-self: flex-end;
+    width: 10rem;
+    padding: 10px 0;
+    margin: 1rem 0;
+}
+
+.basic-form__div button:disabled,
+.basic-form__div button:disabled:hover,
+.basic-form__div button:disabled:active {
+    background-color: rgb(149, 143, 143);
+    cursor: not-allowed;
+}
