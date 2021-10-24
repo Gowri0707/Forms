@@ -3,7 +3,7 @@ import classes from "./Input.module.css";
 const Input = (props) => {
   const invalidStyle =
     classes["div-input"] + " " + classes["div-input__invalid"];
-  const styles = !props.error ? classes["div-input"] : invalidStyle;
+  const styles = !props.hasError ? classes["div-input"] : invalidStyle;
   
   return (
     <div className={styles}>
@@ -15,7 +15,7 @@ const Input = (props) => {
         onChange={props.onChange}
         onBlur={props.onBlur}
       />
-      {props.error && (
+      {props.hasError && (
         <p className={classes["error-text"]}>{props.errorText}</p>
       )}
     </div>
